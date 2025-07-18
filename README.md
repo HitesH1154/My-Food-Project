@@ -1,1 +1,1 @@
-My-Food-Project: https://github.com/HitesH1154/My-Food-Project.git
+My-Food-Project: https://hitesh1154.github.io/My-Food-Project/
