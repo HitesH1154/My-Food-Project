@@ -1,0 +1,109 @@
+/* Clear floats after rows */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Common column styles */
+[class^="col"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* 12-column system using span-X-of-Y classes */
+.col.span-1-of-2 {
+    width: 50%;
+}
+
+.col.span-1-of-3 {
+    width: 33.3333%;
+}
+
+.col.span-2-of-3 {
+    width: 66.6667%;
+}
+
+.col.span-1-of-4 {
+    width: 25%;
+}
+
+.col.span-2-of-4 {
+    width: 50%;
+}
+
+.col.span-3-of-4 {
+    width: 75%;
+}
+
+.col.span-1-of-5 {
+    width: 20%;
+}
+
+.col.span-2-of-5 {
+    width: 40%;
+}
+
+.col.span-3-of-5 {
+    width: 60%;
+}
+
+.col.span-4-of-5 {
+    width: 80%;
+}
+
+.col.span-1-of-6 {
+    width: 16.6667%;
+}
+
+.col.span-2-of-6 {
+    width: 33.3333%;
+}
+
+.col.span-3-of-6 {
+    width: 50%;
+}
+
+.col.span-4-of-6 {
+    width: 66.6667%;
+}
+
+.col.span-5-of-6 {
+    width: 83.3333%;
+}
+
+.col.span-1-of-1 {
+    width: 100%;
+}
+
+/* Responsive Breakpoints */
+@media only screen and (max-width: 1023px) {
+    .span-1-of-4,
+    .span-1-of-3,
+    .span-1-of-2,
+    .span-2-of-3,
+    .span-3-of-4 {
+        width: 48% !important;
+        margin: 1%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .span-1-of-4,
+    .span-1-of-3,
+    .span-1-of-2,
+    .span-2-of-3,
+    .span-3-of-4 {
+        width: 100% !important;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
